@@ -175,4 +175,19 @@ Add the files to `.gitignore`
 **/public/worker-*.js.map
 ```
 
+# Error
+---
+> Nextjs - importing next/document outside of pages/_document error
+
+Replace the code of `.eslintrc.json` with 
+
+```javascript
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/no-document-import-in-page": "off"
+  }
+}
+```
+
 # Thank You
